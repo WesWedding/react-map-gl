@@ -7,6 +7,6 @@ const isBrowser: boolean = !(
 );
 
 // $FlowFixMe
-const mapboxgl: MapboxGL = isBrowser ? require('mapbox-gl') : null;
+const mapboxgl: MapboxGL = isBrowser ? require('mapbox-gl') : require('mapbox-gl');
 
 export default mapboxgl;
